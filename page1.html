@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Birthday Calendar Lanaaq</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Twemoji Library -->
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background: linear-gradient(rgba(0, 122, 204, 0.4), rgba(0, 122, 204, 0.4)),
+                  url('Lana.jpg');
+      background-repeat: repeat;
+      background-size: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+      background: #ffffffee;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding: 40px;
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .month {
+      font-size: 24px;
+      font-weight: 700;
+      color: #007acc;
+      margin-bottom: 20px;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 8px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .day {
+      padding: 8px;
+    }
+
+    .highlight {
+      border: 2px solid red;
+      border-radius: 50%;
+      font-weight: bold;
+      color: red;
+    }
+
+    .arrow {
+      width: 2px;
+      height: 40px;
+      background: repeating-linear-gradient(
+        to bottom,
+        #555,
+        #555 4px,
+        transparent 4px,
+        transparent 8px
+      );
+      margin: 10px auto;
+      position: relative;
+    }
+
+    .arrow::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 8px solid #555;
+    }
+
+    .note {
+      display: inline-block;
+      padding: 5px 15px;
+      border: 2px solid red;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .next-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .next-btn:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="month">Agustus 2025</div>
+    <div class="calendar">
+      <div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div>
+      <div class="day">8</div><div class="day highlight">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div>
+      <div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div>
+      <div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div>
+      <div class="day">29</div><div class="day">30</div><div class="day">31</div>
+    </div>
+    <div class="arrow"></div>
+    <div class="note">it’s your birthday</div>
+    <br>
+    <a href="page2.html" class="next-btn">Next ➜</a>
+  </div>
+
+  <script>
+    twemoji.parse(document.body);
+  </script>
+</body>
+</html>

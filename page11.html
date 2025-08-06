@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tebak-Tebakan Matematika</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(rgba(0, 122, 204, 0.4), rgba(0, 122, 204, 0.4)),
+                  url('Lana.jpg');
+      background-repeat: repeat;
+      background-size: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+      background: #ffffffaa;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding: 40px 60px;
+      text-align: center;
+      max-width: 700px;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    p {
+      color: #333;
+      font-size: 18px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 60%;
+      max-width: 300px;
+      margin-top: 15px;
+      border: 2px solid #007acc;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #007acc;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #005fa3;
+    }
+
+    .message {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #d6336c;
+    }
+
+    .next-btn {
+      display: none;
+      margin-top: 30px;
+      background: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .next-btn:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Ayo tebak tebakan</h2>
+    <p>Hasil dari: 9x - 7i &gt; 3 (3x - 7u)</p>
+    <p><em>(AWAS KALAU JAWABANNYA SALAH)</em></p>
+    <input type="text" id="answer" placeholder="Masukkan jawaban..." />
+    <br>
+    <button onclick="checkAnswer()">Cek Jawaban</button>
+    <div class="message" id="message"></div>
+    <a href="page12.html" class="next-btn" id="nextLink">➡️ Halaman Selanjutnya</a>
+  </div>
+
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById('answer').value.trim().toLowerCase();
+      const message = document.getElementById('message');
+      const nextLink = document.getElementById('nextLink');
+
+      if (answer === 'i < 3 u') {
+        message.textContent = 'Benar! Aku jauh lebih cinta kamuuuu lanaaaaa🩷🩷🩷';
+        nextLink.style.display = 'inline-block';
+      } else {
+        message.textContent = 'Jawaban kamu masih salah, coba lagi ya!';
+        nextLink.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
+    

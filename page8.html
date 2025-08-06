@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scrapbook Halaman Love</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(rgba(0, 122, 204, 0.4), rgba(0, 122, 204, 0.4)),
+                  url('Lana.jpg');
+      background-repeat: repeat;
+      background-size: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+      position: relative;
+      background: #ffffffaa;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding: 80px 100px;
+      text-align: center;
+      max-width: 600px;
+      overflow: hidden;
+    }
+
+    .quote {
+      font-size: 24px;
+      line-height: 1.5;
+      color: #333;
+      position: relative;
+      z-index: 2;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 20px;
+      color: #ff69b4;
+      z-index: 1;
+    }
+
+    /* Atas */
+    .heart.h1 { top: 10px; left: 50%; transform: translateX(-50%); }
+    .heart.h2 { top: 20px; left: 30%; }
+    .heart.h3 { top: 20px; right: 30%; }
+
+    /* Bawah */
+    .heart.h4 { bottom: 10px; left: 50%; transform: translateX(-50%); }
+    .heart.h5 { bottom: 20px; left: 30%; }
+    .heart.h6 { bottom: 20px; right: 30%; }
+
+    /* Kiri */
+    .heart.h7 { top: 50%; left: 10px; transform: translateY(-50%); }
+    .heart.h8 { top: 30%; left: 20px; }
+    .heart.h9 { top: 70%; left: 20px; }
+
+    /* Kanan */
+    .heart.h10 { top: 50%; right: 10px; transform: translateY(-50%); }
+    .heart.h11 { top: 30%; right: 20px; }
+    .heart.h12 { top: 70%; right: 20px; }
+
+    .next-btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      position: relative;
+      z-index: 2;
+    }
+
+    .next-btn:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Emoji hati mengelilingi kalimat -->
+    <span class="heart h1">❤️</span>
+    <span class="heart h2">❤️</span>
+    <span class="heart h3">❤️</span>
+    <span class="heart h4">❤️</span>
+    <span class="heart h5">❤️</span>
+    <span class="heart h6">❤️</span>
+    <span class="heart h7">❤️</span>
+    <span class="heart h8">❤️</span>
+    <span class="heart h9">❤️</span>
+    <span class="heart h10">❤️</span>
+    <span class="heart h11">❤️</span>
+    <span class="heart h12">❤️</span>
+
+    <div class="quote">you’re the only person i want</div>
+    <a href="page9.html" class="next-btn">Next ➜</a>
+  </div>
+</body>
+</html>

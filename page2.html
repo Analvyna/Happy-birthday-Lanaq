@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Birthday Note</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Twemoji Library -->
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background: linear-gradient(rgba(0, 122, 204, 0.4), rgba(0, 122, 204, 0.4)),
+                  url('Lana.jpg');
+      background-repeat: repeat;
+      background-size: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+      background: #ffffffee;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding: 50px 30px 40px;
+      text-align: left;
+      max-width: 400px;
+      position: relative;
+    }
+
+    .heart-balloon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 60px;
+      height: 100px;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    .line {
+      display: inline-block;
+      border-bottom: 3px solid red;
+    }
+
+    .message {
+      margin-top: 20px;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .next-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .next-btn:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart-balloon">
+      <svg viewBox="0 0 64 100">
+        <!-- Balon Hati -->
+        <path d="M32 10
+                 C32 4, 40 0, 46 6
+                 C52 12, 50 24, 32 40
+                 C14 24, 12 12, 18 6
+                 C24 0, 32 4, 32 10 Z"
+              fill="red" stroke="black" stroke-width="2"/>
+        <!-- Tali Balon -->
+        <line x1="32" y1="40" x2="32" y2="100" stroke="black" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <h1><span class="line">Happy</span></h1>
+    <h1><span class="line">Birthday</span></h1>
+    <h2><span class="line">Barumbung</span></h2>
+    <div class="message">
+      Buat kamu orang yang<br>
+      ingin aku bersama<br>
+      selamanya ...
+    </div>
+    <a href="page3.html" class="next-btn">Next ➜</a>
+  </div>
+
+  <script>
+    twemoji.parse(document.body);
+  </script>
+</body>
+</html>
